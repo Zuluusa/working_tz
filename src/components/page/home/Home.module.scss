@@ -1,0 +1,22 @@
+.news {
+   padding-left: 32px;
+
+   .title {
+      font-weight: 700;
+      font-size: 26px;
+   }
+   .subtitle {
+      padding-top: 16px;
+      padding-bottom: 24px;
+   }
+   .description {
+      p {
+         margin-bottom: 30px;
+
+         a {
+            color: #002BC5;
+            text-decoration-line: underline;
+         }
+      }
+   }
+}

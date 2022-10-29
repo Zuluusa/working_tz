@@ -1,0 +1,101 @@
+.navbar {
+   width: 300px;
+   padding-top: 7px;
+
+   @media (max-width: 768px) {
+      width: 60px;
+   }
+
+   .menu-bars {
+      margin-bottom: 32px;
+
+      p {
+         font-weight: 700;
+      }
+   }
+
+   .nav-menu {
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      transition: 850ms;
+
+      @media (max-width: 768px) {
+         display: none;
+      }
+
+      .nav-menu__list {
+         width: 100%;
+
+         .nav-text {
+            padding-bottom: 32px;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+   
+            a {
+               width: 100%;
+               display: flex;
+               align-items: center;
+               justify-content: space-between;
+   
+               &:hover {
+                  border-right: 3px solid #4F27BF;
+               }
+
+               .nav-link {
+                  display: flex;
+                  justify-content: flex-start;
+                  align-items: center;
+               }
+
+               .subnav-show {
+                  padding-right: 20px;
+               }
+            }
+   
+            span {
+               margin-left: 14px;
+               font-weight: 600;
+            }
+
+            .subnav-text {
+               display: flex;
+               align-items: center;
+
+               &:not(:last-child) {
+                  padding-top: 32px;
+                  padding-bottom: 32px;
+               }
+
+               a {
+                  width: 100%;
+                  padding-left: 46px;
+      
+                  &:hover {
+                     border-right: 3px solid #4F27BF;
+                  }
+
+                  span {
+                     margin-left: 14px;
+                     font-weight: 600;
+                  }
+               }
+            }
+         }
+      }
+   }
+
+   .nav-menu.active {
+      transition: 350ms;
+
+      @media (max-width: 768px) {
+         display: block;
+
+         span {
+            display: none;
+         }
+      }
+   }
+}

@@ -1,0 +1,39 @@
+@import './_normalize.scss';
+@import './components/header';
+@import './components/navbar';
+
+.wrapper {
+   background: #fff;
+   font-family: 'Montserrat';
+   font-style: normal;
+   font-weight: 500;
+   font-size: 20px;
+   line-height: 1.2;
+   color: #1c1c1e;
+
+   .content {
+      display: grid;
+      grid-template-columns: 300px calc(90vw - 300px);
+      padding-left: 32px;
+      padding-top: 25px;
+      margin-bottom: 40px;
+
+      @media (max-width: 768px) {
+         grid-template-columns: 60px calc(90vw - 60px);
+         padding-left: 15px;
+      }
+
+      .home, .address, .calendar, .maps, .settings, .settingsprofile, .tables, .widgets, .financialcontrol, .exit {
+         padding-left: 32px;
+
+         @media (max-width: 768px) {
+            padding-left: 15px;
+         }
+
+         h1 {
+            font-weight: 700;
+            font-size: 26px;
+         }
+      }
+   }
+}
